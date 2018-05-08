@@ -10,10 +10,11 @@
 		<property name="hibernate.connection.url">jdbc:mysql://localhost/apna_complex</property>
 		<property name="hibernate.connection.username">root</property>
 		<property name="hibernate.connection.password">root</property>
+
 		<!-- List of XML mapping files -->
 		<property name="show_sql">true</property>
 		<property name="format_sql">true</property>
-		<mapping resource="apnacomplex\society\entities\society.hbm.xml" />
+		<mapping resource="com/owners/entities/owners.hbm.xml" />
 	</session-factory>
 
 </hibernate-configuration>

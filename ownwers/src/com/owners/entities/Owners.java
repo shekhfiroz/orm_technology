@@ -4,7 +4,7 @@ import java.io.Serializable;
 
 public class Owners implements Serializable {
 
-	private String owner_no;
+	private Integer owner_no;
 	private String owner_first_nm;
 	private String owner_last_nm;
 	private String contact_no;
@@ -13,14 +13,14 @@ public class Owners implements Serializable {
 	private String address_line2;
 	private String city;
 	private String state;
-	private String zip;
+	private Integer zip;
 	private String country;
 
-	public String getOwner_no() {
+	public Integer getOwner_no() {
 		return owner_no;
 	}
 
-	public void setOwner_no(String owner_no) {
+	public void setOwner_no(Integer owner_no) {
 		this.owner_no = owner_no;
 	}
 
@@ -88,11 +88,11 @@ public class Owners implements Serializable {
 		this.state = state;
 	}
 
-	public String getZip() {
+	public Integer getZip() {
 		return zip;
 	}
 
-	public void setZip(String zip) {
+	public void setZip(Integer zip) {
 		this.zip = zip;
 	}
 

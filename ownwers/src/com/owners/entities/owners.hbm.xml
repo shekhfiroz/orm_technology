@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated May 8, 2018 5:03:30 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+	<class name="com.owners.entities.Owners" table="owners">
+		<id name="owner_no" column="owner_no" type="integer" />
+		<property name="address_line1" column="address_line1" type="string" />
+		<property name="address_line2" column="address_line2" type="string" />
+		<property name="city" column="city" type="string" />
+		<property name="contact_no" column="contact_no" type="string" />
+		<property name="country" column="country" type="string" />
+		<property name="email_address" column="email_address" type="string" />
+		<property name="owner_first_nm" column="owner_first_nm" type="string" />
+		<property name="owner_last_nm" column="owner_last_nm" type="string" />
+		<property name="state" column="state" type="string" />
+		<property name="zip" column="zip" type="integer" />
+	</class>
+
+</hibernate-mapping>
