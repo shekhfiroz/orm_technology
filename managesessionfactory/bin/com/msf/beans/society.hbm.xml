@@ -1,0 +1,19 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.msf.beans.Society" table="society">
+		<id name="society_no" column="society_no"/>
+		<property name="society_nm" column="society_nm"/>
+		<property name="registered_nm" column="registered_nm" />
+		<property name="society_reg_date" column="society_reg_date" />
+		<property name="addressLine1" column="addressLine1"/>
+		<property name="addressLine2" column="addressLine2"/>
+		<property name="city" column="city"/>
+		<property name="state" column="state"/>
+		<property name="country" column="country"/>
+		<property name="mobile_nbr" column="mobile_nbr"/>
+		<property name="email_address" column="email_address"/>
+	</class>
+</hibernate-mapping>
