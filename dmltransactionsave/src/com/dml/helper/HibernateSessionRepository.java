@@ -1,4 +1,4 @@
-package com.msf.helper;
+package com.dml.helper;
 
 import org.hibernate.HibernateException;
 import org.hibernate.SessionFactory;
@@ -17,7 +17,6 @@ public class HibernateSessionRepository {
 			 */
 			Configuration configuration = new Configuration().configure();
 			sessionFactory = configuration.buildSessionFactory();
-			// System.out.println("Configuration----->"+sessionFactory);
 
 		} catch (HibernateException e) {
 			e.printStackTrace();
