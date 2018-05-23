@@ -1,0 +1,13 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.sr.beans.Event" table="event">
+		<id name="event_no" column="event_no" />
+		<property name="description" column="description" />
+		<property name="location" column="location" />
+		<property name="status" column="status" />
+		<property name="eventdate" column="eventdate" />
+	</class>
+</hibernate-mapping>
