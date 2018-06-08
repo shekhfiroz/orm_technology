@@ -3,6 +3,9 @@ package com.metadata.beans;
 import java.io.Serializable;
 
 public class Event implements Serializable {
+	
+	private static final long serialVersionUID = 1L;
+	
 	protected int event_no;
 	protected String description;
 	protected String location;

@@ -1,0 +1,15 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.idgen.beans">
+	<class name="Store" table="store">
+		<id name="store_id">
+			<!-- <generator class="uuid"/> -->
+			<generator class="increment" />
+		</id>
+		<property name="franchise_name" />
+		<property name="total_sale" />
+		<property name="employee" />
+	</class>
+</hibernate-mapping>
