@@ -15,7 +15,7 @@ public class JpaTest {
 		boolean flag = false;
 
 		try {
-			System.out.println("JpaTest.main()");
+//System.out.println("JpaTest.main()");
 			entityManagerFactory = Persistence.createEntityManagerFactory("blockname");
 
 			entityManager = entityManagerFactory.createEntityManager();

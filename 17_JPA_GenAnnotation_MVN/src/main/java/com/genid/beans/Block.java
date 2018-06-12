@@ -1,9 +1,13 @@
 package com.genid.beans;
 
 import java.io.Serializable;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
 @Entity
@@ -13,7 +17,27 @@ public class Block implements Serializable {
 	
 	@Id
 	@Column(name = "block_no")
-//	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	/* SEQUENCE will work with oracle database
+	 * @GeneratedValue(strategy=GenerationType.SEQUENCE)
+	 * @SequenceGenerator(name="noora"),sequenceName="block_sq",initialValue=10)
+	 */	
+	
+	/* Identity will work for mysql database
+	 * @GeneratedValue(strategy=GenerationType.IDENTITY) 
+	 */
+	
+	/* syntax of AUTO to work with mysql
+	 * @GeneratedValue(strategy=GenerationType.AUTO)
+	 */
+	
+	/*Syntax to work with Oracle as there were no auto increment in oracle
+	 * @GeneratedValue(strategy=GenerationType.AUTO)
+	 * @SequenceGenerator(name="block",sequenceName="block_seq",allocationSize=5)
+	*/
+	
+	 @GeneratedValue(strategy=GenerationType.TABLE)
+	 @SequenceGenerator(name="block",sequenceName="block_seq",allocationSize=10)
+	
 	protected int block_no;
 
 	@Column(name = "block_name")
