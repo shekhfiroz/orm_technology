@@ -4,6 +4,10 @@ import java.io.Serializable;
 
 public class Owners implements Serializable {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private Integer owner_no;
 	private String owner_first_nm;
 	private String owner_last_nm;

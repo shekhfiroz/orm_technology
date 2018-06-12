@@ -26,8 +26,7 @@ public class IdGenServiceRegistry {
 			 */
 
 
-			sessionFactory = new MetadataSources(
-					new StandardServiceRegistryBuilder().configure("com/idgen/common/hibernate.cfg.xml").build())
+			sessionFactory = new MetadataSources(new StandardServiceRegistryBuilder().configure("com/idgen/common/hibernate.cfg.xml").build())
 							.getMetadataBuilder().build().buildSessionFactory();
 
 			System.out.println(sessionFactory);

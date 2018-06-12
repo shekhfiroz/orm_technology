@@ -1,0 +1,3 @@
+default.configuration=17_JPA_GenAnnotation_MVN
+eclipse.preferences.version=1
+hibernate3.enabled=true
