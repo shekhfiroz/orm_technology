@@ -14,6 +14,7 @@ public class IdGenTest {
 		Session session = sessionFactory.openSession();
 		Transaction transaction = session.beginTransaction();
 		Store store = new Store();
+		
 		store.setEmployee(103);
 		store.setFranchise_name("salman");
 		// store.setStore_id("kundoor");

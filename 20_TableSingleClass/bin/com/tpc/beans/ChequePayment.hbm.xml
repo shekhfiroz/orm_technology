@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+      "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+          "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.tpc.beans">
+	<!-- <subclass name="ChequePayment" discriminator-value="cheque" extends="Payment"> 
+		<property name="chequeNo" length="20" /> <property name="chequeissueDate" 
+		length="20" /> <property name="amount" length="20"></property> </subclass> -->
+
+	<subclass name="ChequePayment" extends="Payment"
+		discriminator-value="cheque">
+		<property name="chequeNo" type="java.lang.String">
+			<column name="cheque_no" />
+		</property>
+		<property name="chequeissueDate" type="java.lang.String">
+			<column name="chequeissuedate" />
+		</property>
+		<property name="amount" />
+	</subclass>
+</hibernate-mapping>
+`

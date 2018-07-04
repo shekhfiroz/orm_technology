@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+      "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+          "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.tpcc.beans">
+
+	<class name="Project" table="project">
+		<id name="projectId">
+			<generator class="uuid" />
+		</id>
+		<property name="projctName" column="projct_name" />
+		<property name="description" column="description" />
+		<property name="type" column="type" />
+
+	</class>
+
+</hibernate-mapping>

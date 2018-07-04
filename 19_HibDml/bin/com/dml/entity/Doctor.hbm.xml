@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jun 17, 2018 3:08:53 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+	<class name="com.dml.entity.Doctor" table="doctor">
+		<id name="doctorId" type="java.lang.String">
+			<column name="doctorId" />
+			<generator class="assigned" />
+		</id>
+		<property name="doctorName" type="java.lang.String">
+			<column name="doctorName" />
+		</property>
+		<property name="experience" type="java.lang.String">
+			<column name="experience" />
+		</property>
+		<property name="specilization" type="java.lang.String">
+			<column name="specilization" />
+		</property>
+		<property name="qualification" type="java.lang.String">
+			<column name="qualification" />
+		</property>
+
+	</class>
+</hibernate-mapping>

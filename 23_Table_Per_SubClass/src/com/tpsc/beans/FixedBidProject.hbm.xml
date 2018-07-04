@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+      "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+          "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+          
+<hibernate-mapping package="com.tpsc.beans">
+
+	<joined-subclass name="FixedBidProject" extends="Project"  table="fixed_bid_project" >
+		<key column="FixedBidProjectNo"  />
+		<property name="projectDuration" column="project_duration" />
+		<property name="projectCost" column="project_cost" />
+		</joined-subclass>
+
+</hibernate-mapping>

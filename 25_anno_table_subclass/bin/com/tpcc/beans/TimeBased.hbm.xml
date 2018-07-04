@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+      "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+          "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.tpcc.beans">
+
+	<union-subclass name="TimeBasedProject" extends="Project"
+		table="time_based_project">
+		<property name="totalCompletionTime" column="total_completion_time" />
+		<property name="perHourRate" column="per_hour_rate" />
+	</union-subclass>
+
+</hibernate-mapping>
+

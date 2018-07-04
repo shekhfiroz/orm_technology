@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.tpc.beans">
+	<class name="Payment" table="payment_tpch" discriminator-value="cash">
+	
+		<id name="paymentNo" column="payment_no">
+			<generator class="increment" />
+		</id>
+
+		<discriminator column="payment_info" />
+
+		<property name="paymentDate" type="java.lang.String">
+			<column name="payment_date" />
+		</property>
+
+		<property name="paymentType" type="java.lang.String">
+			<column name="payment_type" />
+		</property>
+
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.irctc.co.in/inquiry"
+	xmlns:ii="http://www.irctc.co.in/inquiry" elementFormDefault="qualified">
+
+
+	<element name="inquiry" type="inquiry">
+		<complexType name="inquiry">
+			<sequence>
+				<element name="train-inquiry" type="ii:traininquirytyp" />
+				<element name="hotel-inquiry" type="ii:hotelinquirytyp" />
+				<element name="fligth-inquiry" type="ii:fligthinquirytyp" />
+			</sequence>
+		</complexType>
+
+		<complexType name="traininquirytyp">
+			<sequence>
+
+				<element name="date" type="string" />
+				<element name="train-no" type="string" />
+				<element name="fare" type="string" />
+				<element name="type" type="string" />
+			</sequence>
+
+		</complexType>
+
+		<complexType name="hotelinquirytyp">
+			<sequence>
+				<element name="addess" type="string" />
+				<element name="room-no" type="string" />
+				<element name="rent" type="string" />
+				<element name="type" type="string" />
+			</sequence>
+		</complexType>
+
+		<complexType name="fligthinquirytyp">
+			<sequence>
+
+				<element name="date" type="string" />
+				<element name="fare" type="string" />
+				<element name="type" type="string" />
+			</sequence>
+
+		</complexType>
+
+</schema>

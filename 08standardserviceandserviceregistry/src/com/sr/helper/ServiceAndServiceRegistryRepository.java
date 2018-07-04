@@ -25,6 +25,7 @@ public class ServiceAndServiceRegistryRepository {
 			//calling build service registry
 			ServiceRegistry serviceRegistry = serviceRegistryBuilder.buildServiceRegistry();
 			
+			
 			//finally we get seessionFactory object by passing the reference of serviceRegistry as an argument
 			sessionFactory = configuration.buildSessionFactory(serviceRegistry);
 			

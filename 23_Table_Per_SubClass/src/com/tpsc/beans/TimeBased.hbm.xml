@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+      "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+          "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.tpsc.beans">
+
+	<joined-subclass name="TimeBasedProject" extends="Project" table="time_based">
+		<key column="FixedBidProjectNo" />
+		<property name="totalCompletionTime" column="total_completion_time" />
+		<property name="perHourRate" column="per_hour_rate" />
+	</joined-subclass>
+
+</hibernate-mapping>
+
