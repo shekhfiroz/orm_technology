@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+      "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+          "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.otm.beans">
+	<class name="Order" table="order_one_to_many_map0003">
+		<id name="OrderId">
+			<generator class="increment" />
+		</id>
+		<property name="DeliveryDate" />
+		<property name="ShippingAddress" />
+
+		<map name="product" >
+			<key column="OrderId" />
+			<map-key column="product_order1111" type="string" />
+			<one-to-many class="Product" />
+		</map>
+	</class>
+</hibernate-mapping>

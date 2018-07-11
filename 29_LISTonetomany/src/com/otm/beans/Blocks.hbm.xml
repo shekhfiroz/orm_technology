@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+      "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+          "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.otm.beans">
+	<class name="Blocks" table="block_onetomanyaslist">
+		<id name="block_no" column="block_no">
+			<generator class="increment" />
+		</id>
+		<property name="block_nm" />
+		<property name="description" />
+		<property name="units" />
+
+		<!-- setting up relationship -->
+		<list name="flats">
+			<key column="block_no" />
+			<list-index column="block_flats" base="1"></list-index>
+			<one-to-many class="Flats" />
+		</list>
+	</class>
+</hibernate-mapping>
